@@ -1,8 +1,10 @@
 package BioX::Workflow::Command::Plugin::Logger::Elastic;
 
-use strict;
-use 5.008_005;
 our $VERSION = '0.01';
+
+use Moose::Role;
+
+
 
 1;
 __END__
