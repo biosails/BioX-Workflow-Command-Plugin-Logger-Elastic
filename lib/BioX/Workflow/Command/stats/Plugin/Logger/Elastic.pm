@@ -42,7 +42,7 @@ around 'execute' => sub {
 
     $self->$orig(@_);
 
-    $self->search_elastic_file_index;
+    # $self->search_elastic_file_index;
 };
 
 sub try_create_index {
@@ -114,28 +114,28 @@ sub create_elastic_file_index {
     );
 }
 
-sub search_elastic_file_index {
-    my $self = shift;
-
-    my $doc = $self->elasticsearch->search(
-        index => 'hpcrunner',
-        type  => 'biox_stats',
-        body  => {
-            query => {
-                bool => {
-                    must => [
-                        {
-                            match => { sample => 'Sample_03' }
-                        },
-                        {
-                            match => { type => 'INPUT' }
-                        },
-                    ],
-                }
-            }
-        }
-    );
-
-}
+##TODO Add interface for searching
+# sub search_elastic_file_index {
+#     my $self = shift;
+#
+#     my $doc = $self->elasticsearch->search(
+#         index => 'hpcrunner',
+#         type  => 'biox_stats',
+#         body  => {
+#             query => {
+#                 bool => {
+#                     must => [
+#                         {
+#                             match => { sample => 'Sample_03' }
+#                         },
+#                         {
+#                             match => { type => 'INPUT' }
+#                         },
+#                     ],
+#                 }
+#             }
+#         }
+#     );
+# }
 
 1;
