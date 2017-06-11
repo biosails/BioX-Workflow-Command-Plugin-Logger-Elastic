@@ -47,7 +47,18 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.01",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/biosails/BioX-Workflow-Command-Plugin-Logger-Elastic/issues"
+      },
+      "homepage" : "https://github.com/biosails/BioX-Workflow-Command-Plugin-Logger-Elastic",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/biosails/BioX-Workflow-Command-Plugin-Logger-Elastic.git",
+         "web" : "https://github.com/biosails/BioX-Workflow-Command-Plugin-Logger-Elastic"
+      }
+   },
+   "version" : "0.02",
    "x_serialization_backend" : "Cpanel::JSON::XS version 3.0233"
 }
 
