@@ -135,7 +135,6 @@ sub search_elastic_file_index {
             }
         }
     );
-    print Dumper($doc);
 
 }
 
