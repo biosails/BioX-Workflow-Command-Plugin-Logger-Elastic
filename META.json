@@ -37,12 +37,33 @@
       },
       "runtime" : {
          "requires" : {
+            "Data::Dumper" : "0",
+            "DateTime" : "0",
+            "File::Basename" : "0",
+            "File::Details" : "0",
+            "HPC::Runner::Command::Plugin::Logger::Elastic" : "0",
+            "MooseX::App::Role" : "0",
+            "Number::Bytes::Human" : "0",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.96"
+            "Capture::Tiny" : "0",
+            "Cwd" : "0",
+            "File::Path" : "0",
+            "File::Spec" : "0",
+            "File::Spec::Functions" : "0",
+            "File::Temp" : "0",
+            "FindBin" : "0",
+            "IPC::Cmd" : "0",
+            "Test::Class::Moose" : "0",
+            "Test::Class::Moose::Load" : "0",
+            "Test::Class::Moose::Runner" : "0",
+            "Test::More" : "0.96",
+            "Text::Diff" : "0",
+            "strict" : "0",
+            "warnings" : "0"
          }
       }
    },
@@ -58,7 +79,7 @@
          "web" : "https://github.com/biosails/BioX-Workflow-Command-Plugin-Logger-Elastic"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_serialization_backend" : "Cpanel::JSON::XS version 3.0233"
 }
 
