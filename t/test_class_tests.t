@@ -5,7 +5,6 @@ use Test::Class::Moose::Runner;
 
 ##Run the main applications tests
 
-Test::Class::Moose::Runner->new(
-    test_classes => [
-    ],
-)->runtests;
+Test::Class::Moose::Runner->new( test_classes =>
+      [ 'TestsFor::BioX::Workflow::Command::Plugin::Logger::Elastic::Test001', ], )
+  ->runtests;

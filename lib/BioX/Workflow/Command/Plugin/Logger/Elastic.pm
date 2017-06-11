@@ -2,11 +2,16 @@ package BioX::Workflow::Command::Plugin::Logger::Elastic;
 
 our $VERSION = '0.01';
 
-use Moose::Role;
+use MooseX::App::Role;
 
+sub BUILD {
+  my $self = shift;
+  print "WHEEEEE\n";
 
+}
 
 1;
+
 __END__
 
 =encoding utf-8
